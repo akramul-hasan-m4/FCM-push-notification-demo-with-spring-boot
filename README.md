@@ -9,12 +9,15 @@
 * You can give Debug signing certificate SHA-1 but it is optional . For creating certificate from your android studio click gradle from right side of screen , then click android > 	  singingReport . then see your console u found a sha-1 fingerprint . copy it and paste it in firbase requird field.
 
 **Step 3:** Download **google-services.json** file and paste it on app folder (select project view first)
+
 **Step 4:**
-	1. Add dependency in project label - classpath 'com.google.gms:google-services:4.0.1'
-	2. Add depency in app label -  implementation 'com.google.firebase:firebase-core:16.0.1' and  implementation 'com.google.firebase:firebase-messaging:17.3.4'
-	3. If u have some support error then add dependency implementation 'com.android.support:support-v4:28.0.0'
-	4. Appy pluging in app lavel bottom of the page apply plugin: 'com.google.gms.google-services'
+* Add dependency in project label - classpath 'com.google.gms:google-services:4.0.1'
+* Add depency in app label -  implementation 'com.google.firebase:firebase-core:16.0.1' and  implementation 'com.google.firebase:firebase-messaging:17.3.4'
+* If u have some support error then add dependency implementation 'com.android.support:support-v4:28.0.0'
+*  Appy pluging in app lavel bottom of the page apply plugin: 'com.google.gms.google-services'
+ 
 **Step 5:** Then sync the project and run it then got to console and see verify installation success or not (bottom)
+
 **Step 6:** Tehn create a service which extends FirebaseMessagingService and override onMessageReceived method like -
 ```java
 		@Override
@@ -65,10 +68,10 @@
 **Step 8:** Add in menifest file into application tag -
 ```xml
 	<service android:name=".MyFirebaseMessagingService">
-        <intent-filter>
-            <action android:name="com.google.firebase.MESSAGING_EVENT" />
-        </intent-filter>
-    </service>
+      	<intent-filter>
+      		<action android:name="com.google.firebase.MESSAGING_EVENT" />
+      	</intent-filter>
+	</service>
 ```
 **Step 9:** add permission into manifest tag 
 ```xml
@@ -100,8 +103,8 @@
       }
     }
 ```
-*Must add in Headers* -
-    Accept : application/json
-    Content-Type : application/json
-    Authorization : key=*****your key*****
+**Must add in Headers** -
+   * Accept : application/json
+   * Content-Type : application/json
+   * Authorization : key=*****your key*****
   
