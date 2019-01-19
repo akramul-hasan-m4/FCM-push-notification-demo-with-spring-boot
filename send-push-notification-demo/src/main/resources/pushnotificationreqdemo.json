@@ -1,0 +1,11 @@
+{
+	"to": "/topics/NEWS",
+	"data": {
+		"extra_information": "extra info"
+	},
+	"notification": {
+		"title": "title",
+		"text": "msg",
+		"click_action": "activity"
+	}
+}

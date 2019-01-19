@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "322615243471",
+    "firebase_url": "https://fcm-push-notification-d3109.firebaseio.com",
+    "project_id": "fcm-push-notification-d3109",
+    "storage_bucket": "fcm-push-notification-d3109.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322615243471:android:4610a62f189bff15",
+        "android_client_info": {
+          "package_name": "com.spring.pushnotification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322615243471-3n73vmmu1sb7qihi0t2c85pl4dspclu8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDu6-UD4nlBCbOeGcq5LcM7Ips4Vhx9nkc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
